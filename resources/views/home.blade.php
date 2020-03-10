@@ -10,7 +10,7 @@
     </div>
 
     <div class="info">
-      <h2>We started From The Bottom In 2016</h2>
+      <h2>We started From The Bottom In 2017</h2>
       <div class="paragraphs">
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ea ipsum, id fugiat accusamus, sed cum qui
