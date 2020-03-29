@@ -1,0 +1,65 @@
+#offers-page{
+    padding: 80px;
+    h1{
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: black;
+        margin-bottom: 2rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    form{
+        .form-group{
+            label{
+                font-weight: 700;
+                margin-bottom: 10px;
+                color: black;
+            }
+            .form-control{
+                padding: 5px !important;
+                border: 2px solid black;
+                font-size: 1.3rem;
+                height: auto;
+            }
+            button[type="submit"]{
+                background: #18e411;
+                border: none;
+                padding: 10px 30px;
+            }
+      }
+    }
+}
+
+// responsive
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 0px) and (max-width: 767px){
+   #offers-page{
+       padding: 20px;
+       h1{
+           font-size: 2rem;
+       }
+   }
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    #offers-page{
+        padding: 20px;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)  and (max-width: 1199px) {
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

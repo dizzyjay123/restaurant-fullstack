@@ -4,7 +4,7 @@
         src="/img/images.png"
         alt="">
     </a>
-    
+
     <div class="menu">
       <div class="menu-title">
         Menu
@@ -14,7 +14,6 @@
         <li><a href="/about">About Us</a></li>
         <li><a href="/waitlist">WaitLists</a></li>
         <li><a href="/offers">Offers</a></li>
-        <li><a href="/giftcards">GiftCards</a></li>
       </ul>
     </div>
 
