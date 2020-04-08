@@ -150,22 +150,10 @@ body {
         transform: translate3d(300px, 0, 0);
         max-width: calc(100vw - 300px);
 
-        background: rgb(134, 245, 106);
-        /* Old browsers */
-        background: -moz-radial-gradient(center,
-                ellipse cover,
-                rgb(72, 237, 99) 0%,
-                rgb(38, 194, 33) 100%);
-        /* FF3.6-15 */
-        background: -webkit-radial-gradient(center,
-                ellipse cover,
-                rgb(68, 187, 47) 0%,
-                rgb(66, 190, 28) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: radial-gradient(ellipse at center,
-                rgb(53, 192, 53) 0%,
-                rgb(91, 212, 11) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: #3f0c15; /* Old browsers */
+        background: -moz-linear-gradient(left, #3f0c15 0%, #3a0a14 48%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #3f0c15 0%,#3a0a14 48%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #3f0c15 0%,#3a0a14 48%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         overflow: hidden;
 
     }
@@ -259,7 +247,7 @@ body {
         margin-bottom: 3rem;
     }
     .button-rounded {
-        background: #30ee40;
+        background: #3f0c15;
         color: white;
         display: inline-block;
         padding: 15px;

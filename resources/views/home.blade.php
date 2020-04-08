@@ -32,7 +32,7 @@
 
   <section id="food-preview">
     <h2>We have everything you need to kill your hunger</h2>
-    <div class="button-rounded">View Our Menu</div>
+    
     <div class="container">
       <div class="left-btn">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
