@@ -150,10 +150,7 @@ body {
         transform: translate3d(300px, 0, 0);
         max-width: calc(100vw - 300px);
 
-        background: #3f0c15; /* Old browsers */
-        background: -moz-linear-gradient(left, #3f0c15 0%, #3a0a14 48%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #3f0c15 0%,#3a0a14 48%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #3f0c15 0%,#3a0a14 48%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background-image: radial-gradient(circle, #94de42, #73c43b, #52aa33, #32912b, #077823);
         overflow: hidden;
 
     }

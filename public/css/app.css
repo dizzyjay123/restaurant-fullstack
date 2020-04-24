@@ -229,12 +229,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #3f0c15;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #3f0c15 0%, #3a0a14 48%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-image: radial-gradient(circle, #94de42, #73c43b, #52aa33, #32912b, #077823);
   overflow: hidden;
   padding: 100px;
 }
@@ -263,6 +258,28 @@
 .welcome-jumbo .burger-fries {
   width: 100%;
   position: relative;
+  -webkit-animation: moveUpandDown 3s linear infinite;
+          animation: moveUpandDown 3s linear infinite;
+}
+
+@-webkit-keyframes moveUpandDown {
+  0%, 100% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 30px;
+  }
+}
+
+@keyframes moveUpandDown {
+  0%, 100% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 30px;
+  }
 }
 
 body {
@@ -402,12 +419,7 @@ body {
 #app-layout #content-section {
   transform: translate3d(300px, 0, 0);
   max-width: calc(100vw - 300px);
-  background: #3f0c15;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #3f0c15 0%, #3a0a14 48%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-image: radial-gradient(circle, #94de42, #73c43b, #52aa33, #32912b, #077823);
   overflow: hidden;
 }
 
