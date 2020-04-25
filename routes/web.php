@@ -33,6 +33,14 @@ Route::get('/admin/food-items/create', 'admin\FoodItemsController@create');
 Route::get('/admin/food-items/{id}/edit', 'admin\FoodItemsController@edit');
 
 
+//admin customers
+Route::get('/admin/offers-members', 'admin\CustomersController@allOffersMembers');
+
+Route::get('/admin/reservations', 'admin\CustomersController@allReservations');
+
+
+
+
 //admin authentication
 Route::get('/admin/register', function () {
     return view('admin/register');
@@ -54,7 +62,7 @@ Route::get('/menu/{slug}', 'StaticPagesController@singleMenu');
 
 Route::get('/about', 'StaticPagesController@about');
 
-Route::get('/waitlist', 'StaticPagesController@waitlist');
+Route::get('/reservations', 'StaticPagesController@reservations');
 
 Route::get('/contact', 'StaticPagesController@contact');
 
