@@ -47,6 +47,10 @@ Route::get('/admin/users/create', 'admin\UsersController@create');
 Route::get('/admin/users/{id}/edit', 'admin\UsersController@edit');
 
 
+
+Auth::routes();
+
+
 //admin authentication
 Route::get('/admin/register', function () {
     return view('admin/register');
@@ -73,7 +77,5 @@ Route::get('/reservations', 'StaticPagesController@reservations');
 Route::get('/contact', 'StaticPagesController@contact');
 
 Route::get('/offers', 'StaticPagesController@offers');
-
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
