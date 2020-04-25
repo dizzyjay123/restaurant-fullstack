@@ -73,3 +73,7 @@ Route::get('/reservations', 'StaticPagesController@reservations');
 Route::get('/contact', 'StaticPagesController@contact');
 
 Route::get('/offers', 'StaticPagesController@offers');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
