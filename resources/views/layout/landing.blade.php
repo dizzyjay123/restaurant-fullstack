@@ -6,6 +6,9 @@
 
         <title>Emmanuel Tasties</title>
 
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="/css/app.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -19,7 +22,7 @@
 
             <div class="welcome-jumbo">
               <div class="status">New</div>
-              <h1>Emmanuel Tasties </h1>
+              <h1>Emmanuel Tasties</h1>
               <img src="/img/hamburger-and-fries-png-4.png" class="burger-fries">
             </div>
           </section>

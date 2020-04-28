@@ -6,6 +6,9 @@
 
         <title>Emmanuel Tasties</title>
 
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="/css/app.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -71,6 +74,13 @@
             @include('includes.side-menu')
 
             <section id="content-section">
+
+                @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
                 @yield('content')
             </section>
 
