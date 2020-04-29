@@ -57,7 +57,7 @@
                                     <td>{{ $user->fname }} {{ $user->lname }}</td>
                                     <td>{{ $user->email }}</td>
                                     <td>{{date('m/d/Y', strtotime($user->updated_at))}}</td>
-                                    <td><a href="/admin/users/{{$user->id}}/edit"><i class="far fa-edit"></i></a></td>
+                                    <td><a href="/admin/users/{{$user->id}}/edit"><i class="far fa-thrash-alt"></i></a></td>
                                     <td><a href="/admin/users/{{$user->id}}/delete" onclick="if(! confirm('Are you sure you want to delete this user?')) { return false;}"><i class="far fa-trash-alt"></i><a/></td>
                                 </tr>
                                 @endforeach
