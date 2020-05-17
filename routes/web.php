@@ -23,7 +23,13 @@ Route::get('/admin/food-categories', 'admin\FoodCategoriesController@index');
 
 Route::get('/admin/food-categories/create', 'admin\FoodCategoriesController@create');
 
+Route::post('/admin/food-categories', 'admin\FoodCatetoriesController@store');
+
 Route::get('/admin/food-categories/{id}/edit', 'admin\FoodCategoriesController@edit');
+
+Route::put('/admin/food-categories/{id}/', 'admin\FoodCategoriesController@update');
+
+Route::delete('/admin/food-categories/{id}/delete', 'admin\FoodCategoriesController@delete');
 
 //admin food items
 Route::get('/admin/food-items', 'admin\FoodItemsController@index');
@@ -50,7 +56,7 @@ Route::get('/admin/users/{id}/edit', 'admin\UsersController@edit');
 
 Route::put('/admin/users/{id}/', 'admin\UsersController@update');
 
-Route::get('/admin/users/{id}/delete', 'admin\UsersController@delete');
+Route::delete('/admin/users/{id}/delete', 'admin\UsersController@delete');
 
 
 Auth::routes();
@@ -58,10 +64,12 @@ Auth::routes();
 
 //admin authentication
 Route::get('/admin/register', function () {
+
     return view('admin/register');
 });
 
 Route::get('/admin/login', function () {
+
     return view('admin/login');
 });
 

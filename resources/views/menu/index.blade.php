@@ -29,7 +29,7 @@
                     dignissimos recusandae!
                   </p>
                   <div class="food-image">
-                    <img src="https://i.dlpng.com/static/png/52871_preview.png" alt="">
+                    <img src="/img/chips.png" alt="">
                   </div>
                 </div>
 

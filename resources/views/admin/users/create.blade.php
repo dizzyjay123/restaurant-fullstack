@@ -38,9 +38,10 @@
                        <div class="card">
                            <h5 class="card-header">Create a new User</h5>
                            <div class="card-body">
+
                             <form method="POST" action="/admin/users">
                                 @csrf
-                                   <div class="form-group">
+                                    <div class="form-group">
                                        <label for="inputfirstname">First Name</label>
                                        <input id="inputfirstname" type="text" class="form-control form-control-lg @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="name" autofocus placeholder="First Name">
                                        @error('fname')

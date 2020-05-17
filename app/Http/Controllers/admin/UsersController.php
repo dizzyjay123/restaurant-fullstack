@@ -42,7 +42,9 @@ class UsersController extends Controller
             $user->save();
             $user->roles()->attach(request('role_id'));
 
-        return redirect('/admin/users');
+
+
+        return redirect('/admin/users')->with('status', 'User Created Successfully!');
     }
 
 
@@ -76,7 +78,7 @@ class UsersController extends Controller
             $user->save();
             $user->roles()->sync([request('role_id')]);
 
-            return redirect('/admin/users');
+            return redirect('/admin/users')->with('status', 'User Updated Successfully!');
 
     // $user = User::find($id);
     // $roles = Role::all();
@@ -90,9 +92,9 @@ class UsersController extends Controller
 
     public function delete($id){
         $user = User::find($id);
-        
+
         $user->delete();
 
-        return redirect('/admin/users');
+        return redirect('/admin/users')->with('status', 'User Deleted Successfully!');
     }
 }
