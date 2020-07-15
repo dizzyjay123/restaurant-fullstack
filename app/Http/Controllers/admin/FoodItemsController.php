@@ -61,7 +61,7 @@ public function update($id){
     request()->validate([
         'title' => ['required', 'string', 'max:255'],
         'description' => ['required', 'string'],
-        'image_url' => ['string'],
+        // 'image_url' => ['string'],
         'price' => ['required'],
         'category_id' => ['required', 'integer'],
     ]);

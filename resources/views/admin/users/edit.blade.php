@@ -95,7 +95,6 @@
                                                 selected
                                             @endif
 
-
                                             >{{ $role->title }}</option>
                                             @endforeach
 

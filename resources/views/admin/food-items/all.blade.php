@@ -45,20 +45,33 @@
                                     <th scope="col">id</th>
                                     <th scope="col">Title</th>
                                     <th scope="col">Price</th>
-                                    <th scope="col">Date Created</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Date</th>
                                     <th scope="col">Edit</th>
                                     <th scope="col">Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach ($items as $item)
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Burgurs</td>
-                                    <td>$10</td>
-                                    <td>2/2/2020</td>
-                                    <td><a href="/admin/food-items/1/edit"><i class="far fa-edit"></i></a></td>
-                                    <td><a href="/admin/food-items/1/delete" onclick="if(! confirm('Are you sure you want to delete this item?')) { return false;}"><i class="far fa-trash-alt"></i><a/></td>
+                                    <th scope="row">{{$item->id}}</th>
+                                    <td>{{ $item->title }}</td>
+                                    <td>{{ $item->price }}</td>
+                                    <td>{{ $item->description }}</td>
+                                    <td>{{date('m/d/Y', strtotime($item->updated_at))}}</td>
+                                    <td><a href="/admin/food-items/{{$item->id}}/edit"><i class="far fa-edit"></i></a></td>
+                                    <td>
+                                            <a href="#" onclick="event.preventDefault();
+                                                document.getElementById('delete-item-{{ $item->id }}').submit();"><i class="far fa-trash-alt"></i></a>
+
+
+                                            <form id="delete-item-{{ $item->id }}" action="/admin/food-item/{{$item->id}}/delete" method="POST" style="display: none;">
+                                                @method('DELETE')
+                                                @csrf
+                                            </form>
+                                    </td>
                                 </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
