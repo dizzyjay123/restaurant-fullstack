@@ -62,7 +62,7 @@
                                     </div>
 
                                    <div class="form-group">
-                                        <label for="inputdescriptionstname">Last Name</label>
+                                        <label for="inputdescriptionstname">Description</label>
                                         <textarea id="inputdescription" type="text" class="form-control form-control-lg @error('lname') is-invalid @enderror" name="description"  required autofocus placeholder="Write a Description">{{ old('description', $category->description) }}</textarea>
                                             @error('description')
                                                 <span class="invalid-feedback" role="alert">

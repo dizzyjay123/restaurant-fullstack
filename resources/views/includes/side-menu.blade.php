@@ -26,8 +26,9 @@
 
     <div class="location">
       <div class="address">
-        Ssnit flats, <br>
-        Asuoyeboah- Kumasi 12353
+        Kumasi KS, <br>
+        <br>
+        Ghana- Kumasi 12353
       </div>
       <div class="phone-number">
         <a href="tel:7744158565">7744158565</a>

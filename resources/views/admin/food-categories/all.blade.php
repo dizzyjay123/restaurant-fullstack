@@ -45,7 +45,7 @@
                                     <th scope="col">id</th>
                                     <th scope="col">Title</th>
                                     <th scope="col">Description</th>
-                                    <th scope="col">Date</th>
+                                    <th scope="col">Date Created</th>
                                     <th scope="col">Edit</th>
                                     <th scope="col">Delete</th>
                                 </tr>

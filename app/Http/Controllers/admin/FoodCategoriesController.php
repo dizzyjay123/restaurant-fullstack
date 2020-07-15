@@ -9,14 +9,6 @@ use App\FoodCategory;
 class FoodCategoriesController extends Controller
 {
 
-    // public function create(){
-    //     return view('admin/food-categories/create');
-    // }
-
-    // public function edit(){
-    //     return view('admin/food-categories/edit');
-    // }
-
     public function __construct()
     {
         $this->middleware('auth');
@@ -36,7 +28,13 @@ class FoodCategoriesController extends Controller
     }
 
     public function store(){
-        // return request()->all();
+        request()->validate([
+            'title' => ['required', 'string', 'max:255'],
+            'description' => ['required', 'string'],
+            'image_url' => ['required', 'string']
+
+        ]);
+
             $category = new FoodCategory();
             $category->title =request('title');
             $category->description =request('description');
@@ -45,7 +43,7 @@ class FoodCategoriesController extends Controller
 
 
 
-        return redirect('/admin/food-categories')->with('status', 'User Created Successfully!');
+        return redirect('/admin/food-categories')->with('<b>status', 'Food Category Created Successfully!</b>');
     }
 
 
@@ -61,7 +59,6 @@ class FoodCategoriesController extends Controller
 
     public function update($id){
         request()->validate([
-
         'title' => ['required', 'string', 'max:255'],
         'description' => ['required', 'string'],
         'image_url' => ['required', 'string']
@@ -82,7 +79,7 @@ class FoodCategoriesController extends Controller
 
     // return view('admin/food-categories/edit', [
 
-    //     'user' => $category,
+    //     'Category' => $category,
     //     'roles' => $roles
     // ]);
     }
@@ -92,7 +89,7 @@ class FoodCategoriesController extends Controller
 
         $category->delete();
 
-        return redirect('/admin/food-categories')->with('status', 'User Deleted Successfully!');
+        return redirect('/admin/food-categories')->with('status', 'Category Deleted Successfully!');
     }
 }
 

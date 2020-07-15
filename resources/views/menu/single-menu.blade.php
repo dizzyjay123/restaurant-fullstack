@@ -27,7 +27,7 @@
                     <div class="col-md-6">
                         <div class="item">
                             <div class="title">
-                            <h4>Santasi Burger</h4>
+                            <h4>Bantama Burger</h4>
                             <span class="price">$10</span>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                     <div class="col-md-6">
                         <div class="item">
                             <div class="title">
-                            <h4>Santasi Burger</h4>
+                            <h4>Adum Burger</h4>
                             <span class="price">$10</span>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                     <div class="col-md-6">
                         <div class="item">
                             <div class="title">
-                            <h4>Santasi Burger</h4>
+                            <h4>Kejetia Burger</h4>
                             <span class="price">$10</span>
                         </div>
                     </div>
